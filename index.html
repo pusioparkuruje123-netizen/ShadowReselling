@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShadowReselling</title>
+  <style>
+    body {
+      background-color: black;
+      color: limegreen;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .loading {
+      text-align: center;
+    }
+    .dots::after {
+      content: '';
+      animation: dots 1.5s steps(4, end) infinite;
+    }
+    @keyframes dots {
+      0% { content: ''; }
+      25% { content: '.'; }
+      50% { content: '..'; }
+      75% { content: '...'; }
+      100% { content: ''; }
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://www.rottentomatoes.com"; // change to Rickroll if you want
+    }, 4000); // 4 sec delay
+  </script>
+</head>
+<body>
+  <div class="loading">
+    <p>Connecting to ShadowReselling servers<span class="dots"></span></p>
+  </div>
+</body>
+</html>
